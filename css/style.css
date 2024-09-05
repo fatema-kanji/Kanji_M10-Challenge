@@ -72,11 +72,10 @@ nav a:hover {
 
 /* establishes a white background */
 .main-bkgd {
-    background: #ffffff url(/images/gulp-bean-bkgd.jpg);
-    background-repeat: repeat;
+    background: #ffffff url(../images/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
 }
-xx
+
 /* sits inside of the white background, centered */
 .main {
     max-width: 1200px;
@@ -89,11 +88,12 @@ xx
 
 article {
     flex-basis: 73%;
+    padding-right: 5%;
 }
 
 picture {
     margin: 3rem 0 0 0;
-    flex-basis: 25%;
+    flex-basis: 23%;
     border-radius: 10px;
 }
 
