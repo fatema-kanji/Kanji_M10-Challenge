@@ -1,0 +1,379 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* make images flexible */
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #59331d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 10px solid #d98555;
+}
+
+/* navbar styling */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 150px;
+}
+
+/* flex basis on the image container, li */
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: #d98555;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url('/images/gulp-bean-bkgd.jpg') repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+article {
+    flex-basis: 73%;
+}
+
+picture {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    border-radius: 10px;
+}
+
+picture img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-basis: 100%;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+figcaption {
+    color: #f2f2f2;
+    padding: 1rem;
+    background-color: #59331D;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+
+footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+}
+
+
+.productGridArea {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.productGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 25px;
+}
+
+.espresso-img {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.espresso {
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.blended-img {
+    grid-column: 5/6;
+    grid-row: 1;
+}
+
+.blended {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.roasted-img {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.roasted {
+    grid-column: 5/6;
+    grid-row: 2;
+}
+
+.contact-page{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ }
+
+.cafe-img{
+    margin: 3rem 0 0 0;
+    padding: 5%;
+    flex-basis: 70%;
+    border-radius: 10px;
+} 
+
+.contact{
+    flex-basis: 20%;
+    align-content: center;
+}
+
+.home{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.homepage-content{
+    flex-basis: 35%;
+    padding-right: 5%;
+
+
+}
+
+.firstsip{
+    margin: 3rem 0 0 0;
+    flex-basis: 60%;
+    border-radius: 10px;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+    .homepage-content{
+        flex-basis: 100%;
+    }
+    
+    .firstsip{
+        flex-basis: 100;
+    }
+    
+    .cafe-img{
+        flex-basis: 100%;
+    } 
+    
+    .contact{
+        flex-basis: 100%;
+    }
+    
+    article {
+        flex-basis: 100%;
+    }
+
+    picture {
+        flex-basis: 100%;
+    }
+
+    nav ul {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .productGrid {
+        grid-template-columns: 1fr;
+        gap: 0px;
+        align-content: space-around;
+        grid-template-areas: "espresso-img" "espresso" "blended-img" "blended" "roasted-img" "roasted";
+    }
+
+    .productGrid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 25px;
+    }
+
+    .espresso-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .espresso {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .blended-img {
+        grid-column: 1;
+        grid-row: 3;    }
+
+    .blended {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .roasted-img {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .roasted {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .cafe-img{
+        flex-basis: 100%;
+    }    
+    
+    .contact{
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 834px) {
+    .productGridArea {
+        flex-basis: 100%;
+    }
+
+    .productGrid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 25px;
+    }
+
+    .espresso-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .espresso {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .blended-img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .blended {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .roasted-img {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .roasted {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
