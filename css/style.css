@@ -55,6 +55,7 @@ nav .logo img {
 }
 
 /* flex basis on the image container, li */
+nav .logo {
     flex-basis: 100%;
     text-align: center;
 }
